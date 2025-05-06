@@ -48,7 +48,7 @@ This script automates the installation of **Dria**, **Ollama**, and required dep
     ```bash
     screen -r dria
     ```
-
+To minimize the screen press ctrl + a + d
 If the screen is detached or you're re-attaching later, use `screen -ls` to see running sessions.
 
 ---

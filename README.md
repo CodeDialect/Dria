@@ -25,19 +25,25 @@ This script automates the installation of **Dria**, **Ollama**, and required dep
 ---
 
 ### How to Use
+1. **Install Dependencies**:
 
-1. **Download the script**:
+   ```bash
+    sudo apt-get update && sudo apt-get upgrade -y
+    sudo apt install git -y
+    ```
+   
+2. **Download the script**:
     ```bash
     git clone https://github.com/CodeDialect/Dria
     chmod +x setup_dria.sh
     ```
 
-2. **Run it**:
+3. **Run it**:
     ```bash
     ./setup_dria.sh
     ```
 
-3. **Attach to the Dria screen session**:
+4. **Attach to the Dria screen session**:
     ```bash
     screen -r dria
     ```

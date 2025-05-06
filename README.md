@@ -28,7 +28,7 @@ This script automates the installation of **Dria**, **Ollama**, and required dep
 
 1. **Download the script**:
     ```bash
-    curl -O https://github.com/CodeDialect/Dria
+    git clone https://github.com/CodeDialect/Dria
     chmod +x setup_dria.sh
     ```
 

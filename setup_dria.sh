@@ -23,6 +23,14 @@ cat << "EOF"
 EOF
 echo -e "${NC}"
 
+# ===============================
+# Clean up problematic NodeSource repo (Ubuntu 24.04 fix)
+# ===============================
+if [ -f /etc/apt/sources.list.d/nodesource.list ]; then
+  echo -e "${RED}[WARNING] Removing unsupported NodeSource repository...${RESET}"
+  sudo rm /etc/apt/sources.list.d/nodesource.list
+fi
+
 echo -e "${BLUE}Updating and upgrading system packages...${NC}"
 sudo apt-get update -y && sudo apt-get upgrade -y
 
